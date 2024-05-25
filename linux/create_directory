@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Create a directory
+mkdir my_directory
+
+# Change to the directory
+cd my_directory
+
+# Create HTML file
+touch index.html
+
+# Create CSS file
+touch style.css
+
+# Create JavaScript file
+touch script.js

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Prompt for the username
+read -p "Enter the username: " username
+
+# Create the user
+sudo useradd -m $username
+
+# Set a password for the user
+sudo passwd $username
+
+# Add the user to the sudo group (optional)
+sudo usermod -aG sudo $username
+
+echo "User $username created successfully."
